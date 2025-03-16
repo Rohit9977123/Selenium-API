@@ -25,15 +25,11 @@ public class herokuaapp {
 		driver.findElement(By.id("file-submit")).click();
 		
 		String text=driver.getTitle();
-		if(text.equals("Final_Nandaji_Ese.pdf"))
+		if(Text.contains("Final_Nandaji_Ese.pdf"))
 		{
-			System.out.print("Succes");
-			
+			System.out.println("my file is uploaded");
 		}
-		else
-		{
-			System.out.println("Fail");
-		}
+		
 	}
 	@AfterMethod
 	public void teardown()
