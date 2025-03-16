@@ -29,8 +29,11 @@ public class herokuaapp {
 		{
 			System.out.println("my file is uploaded");
 		}
+             else
+		{
+			System.out.println("my file is not uploaded");
 		
-	}
+	      }
 	@AfterMethod
 	public void teardown()
 	{
